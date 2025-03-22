@@ -29,7 +29,9 @@ const Home = ({ user }) => {
         </button>
 
         {/* Welcome Text */}
-        <h1 className="welcome-text">Welcome, {user ? user.name : "User"}!</h1>
+        <h1 className="welcome-text">
+          Welcome, {user ? user.name : "Shravanya"}!
+        </h1>
 
         {/* ⚙ Settings Icon */}
         <button className="settings-btn" onClick={() => navigate("/settings")}>
