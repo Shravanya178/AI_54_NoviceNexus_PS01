@@ -7,6 +7,7 @@ import SpeechToSpeech from "./components/SpeechToSpeech.js";
 import Home from "./components/Home.js";
 import Profile from "./components/Profile.js";
 import Settings from "./components/Settings.js";
+import Sidebar from "./components/Sidebar.js";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <Router>
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Login setUser={setUser} />} />{" "}
         {/* ✅ Pass setUser */}
