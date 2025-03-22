@@ -1,0 +1,240 @@
+.App {
+  text-align: center;
+  padding: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #4527a0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #b69dff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #1a1033, #2a1a4a);
+  color: #f8f5ff;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container,
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box,
+.container {
+  background-color: rgba(35, 25, 66, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.form-header,
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-header h2,
+.login-box h2 {
+  color: #d4b6ff;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  background-color: #f8f5ff;
+  border: 2px solid #6b4dc3;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  color: #2a1a4a;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #9d7fea;
+  box-shadow: 0 0 0 3px rgba(157, 127, 234, 0.25);
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #7e7a8c;
+  text-align: justify;
+}
+
+.login-button,
+.signup-button,
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #5e35b1, #4527a0);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.login-button:hover,
+.signup-button:hover,
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #673ab7, #5e35b1);
+  transform: scale(1.02);
+}
+
+.login-button:active,
+.signup-button:active,
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+.signupcontainer {
+  margin: 80px 500px;
+  padding: 20px;
+  height: 80vh;
+}
+h1 {
+  text-align: center;
+}
+.google-login,
+button[type="button"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  background: #b49af0;
+  color: #fff !important;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  background-color: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: #f87171;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+  color: #b69dff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #d4b6ff;
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #8573a9;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #51457a;
+}
+
+.divider span {
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.signup-link,
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #8573a9;
+  font-size: 0.9rem;
+}
+
+.signup-link a,
+.login-link a {
+  color: #b69dff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  color: #d4b6ff;
+  text-decoration: underline;
+}
+
+a {
+  color: #b69dff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #e3d9f1;
+  text-decoration: underline;
+}
