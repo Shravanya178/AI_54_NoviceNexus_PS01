@@ -21,7 +21,7 @@ const Signup = () => {
         const result = await getRedirectResult(auth);
         if (result) {
           console.log("Google Sign-Up Success:", result.user);
-          navigate("/chat", { replace: true });
+          navigate("/Home", { replace: true });
         }
       } catch (error) {
         console.error("Google Sign-Up Error:", error);
@@ -50,7 +50,7 @@ const Signup = () => {
         password
       );
       console.log("User signed up successfully!", userCredential.user);
-      navigate("/chat", { replace: true });
+      navigate("/Home", { replace: true });
     } catch (error) {
       setError(error.message);
     } finally {
@@ -65,7 +65,7 @@ const Signup = () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
       console.log("Google Sign-Up Success:", result.user);
-      navigate("/chat", { replace: true });
+      navigate("/Home", { replace: true });
     } catch (error) {
       console.error("Google Sign-Up Error:", error);
       setError(error.message);
