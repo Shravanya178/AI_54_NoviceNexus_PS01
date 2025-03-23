@@ -28,7 +28,7 @@ const Login = ({ setUser }) => {
       );
       setUser(userCredential.user);
       alert("User logged in successfully!", userCredential.user);
-      navigate("/chat");
+      navigate("/Home");
     } catch (error) {
       setError(error.message);
     } finally {
